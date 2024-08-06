@@ -411,7 +411,7 @@ p.daily-tasks {
     p.t-text {
         font-weight: bolder;
         font-family: monospace;
-        font-size: 21px;
+        font-size: 15px;
         align-items: center;
         display: flex;
         text-align: center;
