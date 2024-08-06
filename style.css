@@ -353,13 +353,13 @@ p.coin-amount-task {
     font-weight: bolder;
     font-family: Geneva;
     position: relative;
-    top: 5px;
+    top: 15%;
     text-align: center;
 }
 
 p.daily-tasks {
     position: absolute;
-    bottom: 3%;
+    bottom: 10%;
     color: white;
     font-size: 40px;
     font-weight: bolder;
