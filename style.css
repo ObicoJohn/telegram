@@ -141,6 +141,7 @@ body {
 .home-container {
     width: 100%;
     position: absolute;display:none;
+    overflow:hidden;
 }
 
 .container {
