@@ -271,7 +271,7 @@ body {
 
 .main-box {
     margin-top: 5px;
-        height: calc(90vh - 200px);
+        height: 260px;
     background-image: url(images/Mew.PNG);
     background-position: center;
     background-size: cover;
