@@ -141,15 +141,13 @@ body {
 .home-container {
     height: 100%;
     width: 100%;
-    background-color: rgb(78, 78, 77);
-    position: absolute;
+    position: absolute;display:none;
 }
 
 .container {
     background-color: rgb(68, 62, 62);
     height: 100%;
     width: 100%;
-    display: none;
 }
 
 .header {
