@@ -311,15 +311,16 @@ body {
 }
 
 .footer {
-    background-color: rgba(0, 0, 0, 0.918);
-    margin: 2px 0;
+   background-color: rgba(0, 0, 0, 0.918);
     display: flex;
     gap: 10px;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 50px;
     background-color: #000;
+    bottom: 0;
+    color: white;
 
     .footer-box1 {
         display: flex;
