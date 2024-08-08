@@ -147,7 +147,7 @@ body {
     background-color: rgb(68, 62, 62);
     width: 100%;
     overflow:hidden;
-     height:calc(100vh - 50px) ;
+     height:calc(100vh - 60px) ;
 }
 
 .header {
@@ -271,7 +271,7 @@ body {
 
 .main-box {
     margin-top: 5px;
-        height: 50vh;
+        height: 60vh;
     background-image: url(images/Mew.PNG);
     background-position: center;
     background-size: cover;
