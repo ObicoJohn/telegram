@@ -139,7 +139,6 @@ body {
     }
 }
 .home-container {
-    height: 90vh;
     width: 100%;
     position: absolute;display:none;
 }
@@ -148,6 +147,7 @@ body {
     background-color: rgb(68, 62, 62);
     width: 100%;
     overflow:hidden;
+     height:calc(100vh - 50px) ;
 }
 
 .header {
