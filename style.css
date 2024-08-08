@@ -161,18 +161,15 @@ body {
     gap: 20px;
     align-items: center;
 }
-
 .setting {
     align-items: center;
     cursor: pointer;
-
     i {
         font-size: 20px;
         margin-top: 10px;
        color: #fff;
     }
 }
-
 .progress {
     padding: 0px 15px;
     margin: 0;
