@@ -12,6 +12,13 @@ a {
     color: #ffffff;
 }
 
+.coin-amount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
 p {
     color: #fff;
 }
@@ -20,18 +27,11 @@ body {
     height: 100vh;
 }
 
+/* loading page styling begins */
+
 .preloader {
     height: 100vh;
-    /* background-color: #008000; */
 
-    /* height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background-image: url(images/IMG_997699.JPG);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: absolute; */
     .preloader-container {
         width: 100vw;
         overflow: hidden;
@@ -40,7 +40,7 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         position: absolute;
-        height: 80vh;
+        height: 78vh;
         z-index: -1;
     }
 
@@ -66,16 +66,12 @@ body {
         text-align: center;
         position: absolute;
         bottom: 0;
-        height: 20vh;
+        height: 22vh;
         z-index: -1;
 
-
         .channels-icon-box {
-            position: absolute;
-            bottom: 0;
             text-align: center;
             width: 100%;
-            padding: 5px 0;
         }
 
         .channel-box {
@@ -84,12 +80,14 @@ body {
             justify-content: center;
             text-align: center;
             margin-top: 3px;
+            position: relative;
+            top: -9px;
 
             .channels {
                 font-size: 20px;
                 border-radius: 50%;
-                width: 30px;
-                height: 30px;
+                width: 28px;
+                height: 28px;
                 background-color: #808080;
 
                 i {
@@ -103,8 +101,8 @@ body {
         .channel {
             font-size: 20px;
             border-radius: 50%;
-            width: 30px;
-            height: 30px;
+            width: 28px;
+            height: 28px;
             background-color: #808080;
 
             i {
@@ -134,7 +132,7 @@ body {
 .load-text {
     margin-top: 20px;
     position: absolute;
-    top: 90%;
+    top: 92%;
     left: 50%;
     transform: translate(-50%, -40%);
     height: 150px;
@@ -160,14 +158,25 @@ body {
 }
 
 .LT3 {
-    font-size: 60px;
+    position: relative;
+    top: -15px;
+    font-size: 50px;
     color: #f1f0f0;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    top: -7px;
 }
 
+.icon-text {
+    position: relative;
+    top: -18px;
+
+}
+
+/* loading page styling ends */
+
+/* home page styling begins */
+
+/*home page styling ends*/
 .home-container {
     height: 100vh;
     width: 100%;
@@ -179,7 +188,7 @@ body {
 .container {
     background-color: rgb(146, 145, 145);
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .header {
@@ -304,22 +313,24 @@ body {
     }
 }
 
-.main-box {
-    margin-top: 5px;
-    width: 100%;
-    background-image: url(images/Mew.PNG);
-    background-position: center;
-    background-size: cover;
-    height: 50%;
-    position: relative;
+.main-page-img img {
+    height: 68vh;
+    width: 100vw;
+}
 
-    .coin-balance {
-        padding-top: 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+.main-box {
+    position: relative;
+    width: 100vw;
+    min-height: 70vh;
+    background-color: #008000;
+
+
+
+    .homepage-balance img {
+        background-color: #ffffff;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
     }
 
     .coin-amount {
@@ -329,9 +340,10 @@ body {
     .farming-btn {
         display: flex;
         justify-content: center;
-        position: absolute;
-        bottom: 2vh;
+        position: fixed;
+        bottom: 0;
         width: 100%;
+        margin-bottom: 64px;
     }
 
     #btn {
@@ -349,7 +361,7 @@ body {
     }
 }
 
-
+/* footer styling begins */
 .footer {
     background-color: rgba(0, 0, 0, 0.918);
     display: flex;
@@ -379,6 +391,9 @@ body {
         top: -8px
     }
 }
+
+/* footer styling ends */
+
 
 /*Daily task page styling*/
 .daily-task {
@@ -648,7 +663,6 @@ p.daily-tasks {
 }
 
 .lvlbox-text {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 11px;
     text-align: center;
     font-weight: bolder;
@@ -659,13 +673,11 @@ p.daily-tasks {
 }
 
 .lvl-name {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 13px;
     font-weight: bolder;
 }
 
 .lvl-coin {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 11px;
     font-weight: bolder;
 }
@@ -717,6 +729,8 @@ p.daily-tasks {
 }
 
 /*Level page styling ends*/
+
+
 /*Invites page styling begins*/
 .invites-body {
     background-color: #0e0e0e;
@@ -743,10 +757,7 @@ p.daily-tasks {
 }
 
 .invites-container {
-    /* background-color: #858585; */
     padding: 0 10px;
-
-
 }
 
 .invites-header {
@@ -763,7 +774,6 @@ p.daily-tasks {
 .invites-header p {
     font-size: 23px;
     font-weight: bolder;
-    font-family: monospace;
 }
 
 .invites-upgrade {
@@ -781,12 +791,9 @@ p.daily-tasks {
 }
 
 .invites-coin {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
     margin-bottom: 15px;
 }
+
 
 .invites-coin img {
     background-color: #ffffff;
@@ -808,11 +815,11 @@ p.daily-tasks {
     margin-bottom: 10px;
 }
 
-.invites-notify {
+.invites-notice {
     text-align: center;
 }
 
-.invites-notify p {
+.invites-notice p {
     margin-bottom: 10px;
     font-size: 12px;
     font-weight: bolder;
@@ -824,20 +831,20 @@ p.daily-tasks {
     margin-bottom: 7px;
 }
 
-.invites-no {
+.invites-row {
     display: flex;
     align-items: center;
     gap: 5px;
     margin-bottom: 5px;
 }
 
-.invites-no img {
+.invites-row img {
     width: 30px;
     border-radius: 50%;
     margin-bottom: 5px;
 }
 
-.invites-no-box {
+.invites-row-box {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -869,7 +876,8 @@ p.daily-tasks {
 
 /*Mission page styling begins*/
 .mission-body {
-    background-color: #c2c1c1;
+    background-color: #666565;
+    opacity: 0.9;
     height: 100vh;
     width: 100vw;
 }
@@ -877,8 +885,11 @@ p.daily-tasks {
 .mission-header p {
     padding: 18px 10px;
     font-size: 30px;
-    font-family: monospace;
     font-weight: bolder;
+}
+
+.mission-container {
+    background-color: #c2c1c1;
 }
 
 .mission-cancel {
@@ -901,13 +912,12 @@ p.daily-tasks {
 }
 
 .mission-bal {
-    font-size: 10px;
+    font-size: 15px;
     margin-bottom: 10px;
 }
 
 .mission-containers {
     background-color: #666565;
-    height: 100vh;
     opacity: 0.9;
 }
 
@@ -916,7 +926,7 @@ p.daily-tasks {
     background-position: center;
     background-size: cover;
     object-fit: cover;
-    height: 45vh;
+    height: 250px;
     width: 100vw;
 }
 
@@ -928,20 +938,20 @@ p.daily-tasks {
     display: flex;
     justify-content: space-between;
     font-weight: bolder;
-    position: absolute;
-    bottom: 54vh;
     width: 100%;
     padding: 0 10px;
     font-size: 15px;
+    margin-top: 30px;
 }
 
 .opt {
     text-decoration: underline;
 }
 
-.mission-text {
-    font-size: 12px;
+.mission-notice {
+    font-size: 15px;
     font-weight: bolder;
+    line-height: 25px;
     margin: 5px 0;
 }
 
@@ -966,16 +976,15 @@ p.daily-tasks {
     border-radius: 50%;
 }
 
-.mission-box {
-    position: absolute;
+.mission-box-container {
     bottom: 0;
     width: 100%;
     padding: 10px 10px;
-    height: 55vh;
 }
 
-.mission-boxe {
+.mission-box {
     height: 100%;
+    background-color: #a8a5a5;
 }
 
 .mission-boxes {
@@ -991,9 +1000,6 @@ p.daily-tasks {
     padding: 5px 7px;
 }
 
-.mission-boxe {
-    background-color: #a8a5a5;
-}
 
 .mission-boxes img {
     width: 40px;
@@ -1022,7 +1028,7 @@ p.daily-tasks {
 
 .promo-link {
     width: 100%;
-    padding: 0 5px;
+    padding: 5px 5px;
 }
 
 button {
@@ -1125,8 +1131,12 @@ button {
 /*Update page styling beginds*/
 .update-body {
     background-color: #000000;
-    /* height: 100vh; */
     padding: 7px 0;
+    height: 100vh;
+}
+
+.update-container-box {
+    background-color: #000000;
 }
 
 .update-container {
@@ -1142,10 +1152,10 @@ button {
     font-size: 23px;
     font-weight: bolder;
     float: right;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
-.update-title {
+.update-notice {
     display: flex;
     align-items: center;
     text-align: center;
@@ -1154,7 +1164,7 @@ button {
     margin-bottom: 15px;
 }
 
-.updates-title {
+.update-notice-text {
     background-color: #5b5c5b;
     width: 200px;
     text-align: center;
