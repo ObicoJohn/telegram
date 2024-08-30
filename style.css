@@ -130,12 +130,11 @@ body {
 
 
 .load-text {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     position: absolute;
-    top: 92%;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -40%);
-    height: 150px;
+    transform: translate(-50%, -20%);
     width: 300px;
     text-align: center;
 
@@ -186,7 +185,7 @@ body {
 }
 
 .container {
-    background-color: rgb(146, 145, 145);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 100vh;
 }
@@ -257,11 +256,11 @@ body {
     margin-top: 15px;
     padding: 10px 15px;
     background-color: rgba(24, 21, 1, 0.74);
-    border-top-left-radius: 15px;
+    border-radius: 15px;
     border-top-right-radius: 15px;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 3px 3px rgba(255, 255, 255, 0.87) inset;
+    box-shadow: 0px 3px 3px 3px rgba(255, 255, 255, 0.87) inset;
     gap: 5px;
 
     .box {
@@ -306,7 +305,7 @@ body {
         }
 
         .box-icon img {
-            background-color: darkslategray;
+            background-color: rgb(12, 12, 12);
             border-radius: 50%;
             padding: 5px;
         }
@@ -322,44 +321,48 @@ body {
     position: relative;
     width: 100vw;
     min-height: 70vh;
-    background-color: #008000;
-
-
-
-    .homepage-balance img {
-        background-color: #ffffff;
-        border-radius: 50%;
-        width: 25px;
-        height: 25px;
-    }
-
-    .coin-amount {
-        font-size: 25px;
-    }
-
-    .farming-btn {
-        display: flex;
-        justify-content: center;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        margin-bottom: 64px;
-    }
-
-    #btn {
-        background-color: #808080;
-        width: 80%;
-        height: 30px;
-        font-size: 15px;
-        font-weight: bold;
-        border-radius: 15px;
-        color: #fff;
-        outline: none;
-        border: none;
-        text-align: center;
-        /* opacity: 0.9;*/
-    }
 }
+
+.homepage-balance {
+    position: absolute;
+    top: 20px;
+    width: 100vw;
+}
+
+.coin-amount img {
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.coin-amount {
+    font-size: 25px;
+}
+
+.farming-btn {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 64px;
+}
+
+#btn {
+    background-color: #808080;
+    width: 80%;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #fff;
+    outline: none;
+    border: none;
+    text-align: center;
+    /* opacity: 0.9;*/
+}
+
 
 /* footer styling begins */
 .footer {
@@ -406,31 +409,16 @@ body {
     background-repeat: no-repeat;
 }
 
-p.coin-amount-task {
-    color: white;
-    font-size: 50px;
-    font-weight: bolder;
-    font-family: Geneva;
-    position: relative;
-    top: 11%;
-    text-align: center;
-}
 
 p.daily-tasks {
-    position: absolute;
-    bottom: 10%;
-    color: white;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bolder;
-    font-family: Geneva;
-    left: 0;
-    right: 0;
 }
 
 .task-container {
     background-color: #858585;
     width: 300px;
-    height: 400px;
+    height: 420px;
     border-radius: 10px;
     position: absolute;
     top: 50%;
@@ -455,15 +443,13 @@ p.daily-tasks {
     padding: 0 10px;
     gap: 5px;
     height: 45px;
-    margin-top: 45px;
+    margin-top: 30px;
 }
 
 .box-cap1 {
     display: flex;
     width: 60%;
-    /* background-color: aqua; */
     align-items: center;
-    /* justify-content: space-between; */
     height: 30px;
     gap: 5px;
 
@@ -498,7 +484,7 @@ p.daily-tasks {
 
 }
 
-.box-cape {
+.task-boxes {
     display: flex;
     width: 100%;
     align-items: center;
@@ -510,7 +496,7 @@ p.daily-tasks {
     }
 }
 
-.x-text {
+.task-text {
     font-weight: bolder;
     font-family: monospace;
     font-size: 20px;
@@ -519,27 +505,15 @@ p.daily-tasks {
     text-align: center;
 }
 
-.box-cape1 {
+.task-award-amount {
     display: flex;
     width: 100%;
     align-items: center;
     gap: 2px;
 }
 
-.box-cap3 {
-    display: flex;
-    width: 50%;
-    /* background-color: aqua; */
-    align-items: center;
-    gap: 3px;
 
-
-    p {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-    }
-}
-
-.box-cap4 p {
+.task button {
     width: 40px;
     height: 23px;
     border-radius: 25%;
@@ -553,20 +527,26 @@ p.daily-tasks {
     font-family: monospace;
     font-size: 20px;
     letter-spacing: 3;
+    outline: none;
+    border: none;
 }
 
 .task-cancel {
-    font-size: 25px;
-    float: right;
     border-radius: 50%;
-    background-color: #000;
-    color: #fff;
-    width: 25px;
-    height: 25px;
-    opacity: 0.5;
-    font-weight: bolder;
-    margin: 5px 5px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 15px;
 }
+
+.task-cancel i {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    color: #ffffffe5;
+}
+
 
 /*Daily task page styling ends*/
 
@@ -587,6 +567,10 @@ p.daily-tasks {
 
 }
 
+.level-header {
+    display: flex;
+    justify-content: space-between;
+}
 
 .lvl-title {
     background-color: #000000;
@@ -616,23 +600,20 @@ p.daily-tasks {
 }
 
 .level-cancel {
-    float: right;
     border-radius: 50%;
-    background-color: #000;
-    color: #fff;
-    width: 25px;
-    height: 25px;
-    opacity: 0.7;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-    display: flex;
-    font-size: 23px;
-    padding-top: 3px;
-    position: absolute;
-    top: -20px;
-    right: 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -14px;
+    left: -93%;
+}
+
+.level-cancel i {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    color: #c5c5c5a4;
 }
 
 .level-box {
@@ -741,19 +722,19 @@ p.daily-tasks {
 }
 
 .invites-cancel {
-    float: right;
     border-radius: 50%;
-    background-color: #9b9999;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
-    display: flex;
-    font-size: 23px;
-    padding-top: 3px;
-    margin-top: 8px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 15px;
+}
+
+.invites-cancel i {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    color: #c5c5c5a4;
 }
 
 .invites-container {
@@ -762,7 +743,7 @@ p.daily-tasks {
 
 .invites-header {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 3px;
     margin-bottom: 8px;
 }
 
@@ -825,7 +806,6 @@ p.daily-tasks {
     font-weight: bolder;
 }
 
-.invites-row {}
 
 #no-recurit {
     margin-bottom: 7px;
@@ -838,10 +818,20 @@ p.daily-tasks {
     margin-bottom: 5px;
 }
 
+.invite-profile-img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .invites-row img {
     width: 30px;
-    border-radius: 50%;
-    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .invites-row-box {
@@ -883,8 +873,9 @@ p.daily-tasks {
 }
 
 .mission-header p {
-    padding: 18px 10px;
+    padding: 10px 10px;
     font-size: 30px;
+    text-align: center;
     font-weight: bolder;
 }
 
@@ -892,20 +883,23 @@ p.daily-tasks {
     background-color: #c2c1c1;
 }
 
+
 .mission-cancel {
-    background-color: #383737;
-    width: 25px;
-    height: 25px;
     border-radius: 50%;
-    text-align: center;
-    float: right;
-    margin: 5px 5px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 15px;
 }
 
 .mission-cancel i {
-    font-size: 23px;
-    font-weight: bolder;
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    color: #a8a8a8e5;
 }
+
 
 .mission-info {
     text-align: center;
@@ -1144,15 +1138,19 @@ button {
 }
 
 .update-cancel {
-    width: 25px;
-    height: 25px;
     border-radius: 50%;
-    background-color: #6b6b6b;
-    text-align: center;
-    font-size: 23px;
-    font-weight: bolder;
-    float: right;
-    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 15px;
+}
+
+.update-cancel i {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    color: #a8a8a8e5;
 }
 
 .update-notice {
@@ -1202,7 +1200,6 @@ button {
 
 .update-box-titles {
     background-color: #5b5c5b;
-    /* height: 30px; */
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
@@ -1219,7 +1216,6 @@ button {
 
 .update-boxes {
     background-color: #5b5c5b;
-    /* height: 30px; */
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
@@ -1272,24 +1268,27 @@ button {
 .bonus-body {
     background-color: #000;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
 }
 
 .bonus-cancel {
-    width: 25px;
-    height: 25px;
     border-radius: 50%;
-    background-color: #6b6b6b;
-    text-align: center;
-    font-size: 23px;
-    font-weight: bolder;
-    float: right;
-    margin-right: 5px;
-    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 15px;
+}
+
+.bonus-cancel i {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    color: #a8a8a8e5;
 }
 
 .bonus-title {
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: center;
     font-size: 35px;
     font-weight: bolder;
@@ -1366,6 +1365,43 @@ button {
 /*Bonus page styling ends*/
 
 
+
+@media screen and (max-width: 768px) {
+    .invites-upgrade {
+        width: calc(100% - 80px);
+        margin: 5px 40px;
+    }
+
+    .invites-notice {
+        margin-bottom: 20px;
+    }
+
+    .invites-notice p {
+        font-size: 12px;
+        line-height: 4px;
+    }
+
+    .update-notice-text {
+        background-color: #5b5c5b;
+        width: 180px;
+    }
+
+    .updates-big {
+        font-size: 15px;
+    }
+
+    .verify-question {
+        margin-bottom: 8px;
+    }
+
+    .verify-question p {
+        font-size: 20px;
+    }
+
+    .verify-notice p {
+        font-size: 10px;
+    }
+}
 
 @media screen and (max-width: 380px) {
     .box-award {
