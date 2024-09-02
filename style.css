@@ -31,6 +31,7 @@ body {
 
 .preloader {
     height: 100vh;
+    overflow:hidden;
 
     .preloader-container {
         width: 100vw;
@@ -134,7 +135,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, -25px);
+    transform: translate(-50%, -60px);
     width: 300px;
     text-align: center;
 
