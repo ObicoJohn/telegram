@@ -2,7 +2,7 @@
 //     $(".preloader").fadeOut(300);
 //     $(".home-container").fadeIn(300);
 // });
-
+// loading script
 var loader = document.getElementById("preloader");
 window.addEventListener("load", function () {
     loader.style.display = "none";

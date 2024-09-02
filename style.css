@@ -25,13 +25,13 @@ p {
 
 body {
     height: 100vh;
+    overflow: hidden;
 }
 
 /* loading page styling begins */
 
 .preloader {
     height: 100vh;
-    overflow:hidden;
 
     .preloader-container {
         width: 100vw;
@@ -54,7 +54,7 @@ body {
         position: absolute;
         margin: auto;
         top: 50%;
-        left: 43%;
+        left: 45%;
         transform: translate(-50%, -50%);
         border-radius: 50%;
         animation: spin 1.5s infinite linear;
@@ -126,26 +126,22 @@ body {
     font-weight: bolder;
     position: relative;
     top: 63%;
-    left: 38%;
+    width: 100%;
+    text-align: center;
 }
 
 
 .load-text {
-    /* margin-top: 20px; */
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, -60px);
-    width: 300px;
     text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
 
 
     .LT1 {
         font-size: 35px;
         color: rgb(180, 72, 0);
         font-weight: bolder;
-        text-align: center;
-
     }
 
     .LT2 {
