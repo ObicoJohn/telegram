@@ -132,7 +132,7 @@ body {
 .load-text {
     /* margin-top: 20px; */
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
     left: 50%;
     transform: translate(-50%, -18px);
     width: 300px;
@@ -291,13 +291,12 @@ body {
             transform: translate(-50%, -40%) !important;
         }
 
-        p {
+        p.daily-title {
             font-size: 12px;
             font-weight: bold;
             margin-bottom: 5px;
             position: absolute;
             top: 65%;
-            display: flex;
             width: 100%;
             text-align: center;
             justify-content: center;
@@ -309,6 +308,17 @@ body {
             padding: 5px;
         }
     }
+}
+
+.come p {
+    position: absolute;
+    bottom: 5px;
+    font-weight: 600;
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    text-decoration: underline;
 }
 
 .main-page-img img {
@@ -843,7 +853,7 @@ p.daily-tasks {
 }
 
 .invite-link {
-    position: absolute;
+    position: fixed;
     bottom: 55px;
     width: 100%;
     height: 50px;
