@@ -132,9 +132,9 @@ body {
 .load-text {
     /* margin-top: 20px; */
     position: absolute;
-    bottom: 15px;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -18px);
+    transform: translate(-50%, -25px);
     width: 300px;
     text-align: center;
 
@@ -180,7 +180,7 @@ body {
     height: 100vh;
     width: 100%;
     position: absolute;
-    display: hidden;
+    display: none;
 }
 
 .container {
