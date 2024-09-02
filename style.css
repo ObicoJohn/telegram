@@ -40,7 +40,7 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         position: absolute;
-        height: 78vh;
+        height: calc(100vh - 110px);
         z-index: -1;
     }
 
@@ -66,7 +66,7 @@ body {
         text-align: center;
         position: absolute;
         bottom: 0;
-        height: 22vh;
+        height: 110px;
         z-index: -1;
 
         .channels-icon-box {
@@ -134,7 +134,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-50%, -20%);
+    transform: translate(-50%, -18px);
     width: 300px;
     text-align: center;
 
@@ -179,9 +179,8 @@ body {
 .home-container {
     height: 100vh;
     width: 100%;
-    /* background-color: rgb(236, 236, 14); */
     position: absolute;
-    display: none;
+    display: hidden;
 }
 
 .container {
@@ -371,7 +370,7 @@ body {
     gap: 10px;
     justify-content: space-between;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     height: 50px;
     background-color: #000;
     bottom: 0;
@@ -380,9 +379,9 @@ body {
     .footer-box1 {
         display: flex;
         width: 30%;
-        justify-content: space-between;
+        gap: 10px;
         margin: 5px 10px;
-        gap: 5px;
+        justify-content: space-between;
 
         .footer-box {
             text-align: center;
@@ -391,7 +390,8 @@ body {
 
     .home {
         position: relative;
-        top: -8px
+        top: -8px;
+        left: 8px;
     }
 }
 
@@ -554,17 +554,12 @@ p.daily-tasks {
 /*Level page styling begins*/
 .level-page {
     width: 100vw;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
 }
 
 .level-container {
-    width: 90%;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    height: 90%;
-
+    margin: 30px 20px 20px;
 }
 
 .level-header {
@@ -620,7 +615,7 @@ p.daily-tasks {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 250px;
+    height: 290px;
     border-radius: 10px;
     margin-bottom: 10px;
     gap: 5px;
@@ -663,23 +658,22 @@ p.daily-tasks {
     font-weight: bolder;
 }
 
-.upgrade-btn {
+.upgrade-btn button {
     width: 90%;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     margin-left: 6px;
 }
 
 .upgrade-btnn {
     width: 100%;
     border-radius: 30px;
-    padding: 4px 10px;
+    padding: 2px 10px;
     font-weight: bold;
     border: none;
-    background-color: #858585;
 }
 
 .Bypass-btn button {
-    font-size: 10px;
+    font-size: 5px;
     border: none;
     padding: 2px 5px;
     border-radius: 15px;
@@ -739,6 +733,9 @@ p.daily-tasks {
 
 .invites-container {
     padding: 0 10px;
+    height: 100vh;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
 }
 
 .invites-header {
@@ -806,6 +803,9 @@ p.daily-tasks {
     font-weight: bolder;
 }
 
+.invites-box {
+    margin-bottom: 50px;
+}
 
 #no-recurit {
     margin-bottom: 7px;
@@ -844,10 +844,9 @@ p.daily-tasks {
 
 .invite-link {
     position: absolute;
-    bottom: 0;
+    bottom: 55px;
     width: 100%;
     height: 50px;
-    background-color: #000000;
     padding: 5px 4px;
 }
 
@@ -868,8 +867,9 @@ p.daily-tasks {
 .mission-body {
     background-color: #666565;
     opacity: 0.9;
-    height: 100vh;
+    height: calc(100vh - 50px);
     width: 100vw;
+    overflow: scroll;
 }
 
 .mission-header p {
@@ -933,7 +933,7 @@ p.daily-tasks {
     justify-content: space-between;
     font-weight: bolder;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 15px;
     font-size: 15px;
     margin-top: 30px;
 }
@@ -973,7 +973,7 @@ p.daily-tasks {
 .mission-box-container {
     bottom: 0;
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px 15px;
 }
 
 .mission-box {
@@ -1014,7 +1014,7 @@ p.daily-tasks {
 }
 
 .mission-btn {
-    padding: 1px 7px;
+    padding: 3px 7px;
     border-radius: 20px;
     border: none;
     cursor: pointer;
@@ -1022,7 +1022,7 @@ p.daily-tasks {
 
 .promo-link {
     width: 100%;
-    padding: 5px 5px;
+    padding: 1px 8px 10px;
 }
 
 button {
@@ -1124,13 +1124,14 @@ button {
 
 /*Update page styling beginds*/
 .update-body {
-    background-color: #000000;
+    background-color: #363636;
     padding: 7px 0;
-    height: 100vh;
 }
 
 .update-container-box {
-    background-color: #000000;
+    background-color: #363636;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
 }
 
 .update-container {
@@ -1150,7 +1151,7 @@ button {
     position: relative;
     top: 5px;
     left: 5px;
-    color: #a8a8a8e5;
+    color: #fafafae5;
 }
 
 .update-notice {
@@ -1384,6 +1385,7 @@ button {
     .update-notice-text {
         background-color: #5b5c5b;
         width: 180px;
+        padding: 5px 0;
     }
 
     .updates-big {

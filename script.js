@@ -1,6 +1,6 @@
 $(window).on('load', function () {
-    $(".preloader").fadeOut(800);
-    $(".home-container").fadeIn(800);
+    $(".preloader").fadeOut(300);
+    $(".home-container").fadeIn(300);
 });
 
 //farming button
